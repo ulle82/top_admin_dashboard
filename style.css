@@ -1,3 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 370px 1fr 300px;
+    grid-template-rows: auto auto 1fr 1fr;
+    min-height: 100vh;
+}
+
+.menu {
+    background-color: rgb(24, 147, 213);
+    color: rgb(255, 255, 255);
+    grid-row: 1 / -1;
+}
+
+.search,
+.greeting {
+    grid-column: span 2;
+}
+
+.projects {
+    grid-row: span 2;
+}
+
+.bg-gray {
+    background-color: rgb(226, 232, 240);
+}
+
+.sub-container {
+    border: 2px solid red;
 }
