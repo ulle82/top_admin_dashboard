@@ -216,7 +216,10 @@ body {
     color: grey;
 }
 
-
+.main-section-heading {
+    padding-bottom: 20px;
+    z-index: 1;
+}
 
 
 
