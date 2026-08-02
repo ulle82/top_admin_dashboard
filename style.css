@@ -37,7 +37,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 30px;
 }
 
 .projects {
@@ -192,7 +192,8 @@ body {
 
 .header,
 .announcements-grid,
-.trending-grid {
+.trending-grid,
+.card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -265,7 +266,44 @@ body {
 .project-links {
     display: flex;
     justify-content: end;
-    gap: 15px;
+    gap: 30px;
+}
+
+.cards {
+    display: grid;
+    gap: 30px;
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-bottom: 30px;
+
+}
+
+.card {
+    border-radius: 10px;
+    background-color: white;
+    border-left: 10px solid rgb(241, 180, 41);
+    padding: 30px 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+.project-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-height: 7.0em;
+    min-height: 0;
+}
+
+.project-title {
+    align-content: end;
 }
 
 
@@ -278,6 +316,6 @@ body {
 
 
 
-.border {
+/* .border {
     border: 2px solid red;
-}
+} */
